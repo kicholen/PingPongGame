@@ -5,15 +5,17 @@ public class Rectangle extends Figure {
 	private float _height;
 	
 	public Rectangle(float width, float height, float x, float y) {
+		super(x, y);
 		_width = width;
 		_height = height;
-		_x = x;
-		_y = y;
 	}
 	
-	@Override
-	public void display() {
-		
+	public float getWidth() {
+		return _width;
+	}
+	
+	public float getHeight() {
+		return _height;
 	}
 	
 }
